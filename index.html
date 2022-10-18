@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <title>Music website - Easy Tutorials</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+              
+                <img src="logo.png"  class="logo">
+            <ul>
+                <li> <a href="#">HOME</a></li>
+                <li> <a href="#">ABOUT</a></li>
+                <li> <a href="#">SPICIFICATIONS</a></li>
+                <li> <a href="#">PRODUCT</a></li>
+                <li> <a href="#">CONNECT</a></li>
+            </ul>
+        </div>
+        
+    
+        <div class="content">
+            <div class="left-con">
+                <h1>THE <br> REAL  <br>SOUND</h1>
+
+            </div>
+        
+            <div class="right-con">
+
+                <p>Click Here To Listen</p>
+
+                <img src="play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+        <audio id="mySong">
+            <source src="04 - Teri Meri.mp3" type="audio/mp3">
+            <source src="Desi Beat - Bodyguard 128 Kbps.mp3" type="adio/mp3">
+        </audio>
+
+    <script>
+        var mySong=document.getElementById("mySong");
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src="pause.png";
+            }
+            else{
+                mySong.paused();
+                icon.src="play.png";
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
